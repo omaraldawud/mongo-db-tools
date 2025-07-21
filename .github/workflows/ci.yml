@@ -23,4 +23,4 @@ jobs:
         run: npm ci
 
       - name: 🧪 Run CLI with --help
-        run: node shipping-shipping-db-tool.js --help
+        run: node shipping-db-tool.js --help
