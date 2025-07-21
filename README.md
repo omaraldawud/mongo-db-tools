@@ -99,4 +99,5 @@ MIT — feel free to use and adapt.
 📬 Contact
 Created by omaraldawud.
 For issues, suggestions, or PRs — open a ticket or pull request.
+
 ```
