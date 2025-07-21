@@ -5,6 +5,7 @@ A modular, developer-friendly CLI utility for MongoDB — built to help you insp
 > ✨ Designed for clarity, scalability, and contributions.
 
 ---
+
 <p align="center">
   <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/omaraldawud/mongo-db-tools?style=social">
   <img alt="Forks" src="https://img.shields.io/github/forks/omaraldawud/mongo-db-tools?style=social">
@@ -24,6 +25,7 @@ A modular, developer-friendly CLI utility for MongoDB — built to help you insp
 </p>
 
 ---
+
 ## 📦 Features
 
 - 🔍 List and inspect MongoDB collections
