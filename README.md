@@ -1,31 +1,82 @@
-<<<<<<< HEAD
-=======
-# mongo-db-tools
-🧰 A simple, extensible Node.js CLI tool for MongoDB database management. Perform operations like listing collections, viewing documents, seeding test data, clearing collections, and viewing collection stats — all from the command line.
+# 🛠️ shipping-db-tool
 
+A modular, developer-friendly CLI utility for MongoDB — built to help you inspect, manage, and seed collections easily from the command line.
 
->>>>>>> 3b6f1997d40e3045e7dc56eaf02e44eb3e278473
-# 🧰 Mongo CLI Tool
+> ✨ Designed for clarity, scalability, and contributions.
 
-A simple Node.js CLI tool to manage MongoDB collections with commands like:
+---
 
-- `list` – List all collections
-- `view <collection>` – View all documents in a collection
-- `seed <collection>` – Seed test data into a collection
-- `clear <collection>` – Delete all documents from a collection
-- `stats <collection>` – Show stats for a collection
-- `help` – Show all available commands
+## 📦 Features
 
-## 🔧 Usage
+- 🔍 List and inspect MongoDB collections
+- 📊 Show collection stats (document count, indexes)
+- 🧹 Clear collection contents
+- 🔎 Find documents with optional filters
+- 📤 Export collections to JSON
+- 📥 Import data (coming soon)
+- 🌱 Seed sample data for development
+- 🔐 Secure MongoDB connection via `.env`
+
+---
+
+## 🧱 Project Structure
+
+mongo-cli-tool/
+├── cli/ # Entry point CLI definition
+│ └── commander.js
+├── commands/ # Separated commands by concern (clean SoC)
+│ ├── collections.js
+│ ├── documents.js
+│ ├── exportImport.js
+│ ├── seed.js
+│ └── index.js
+├── db/
+│ └── connect-to-mongodb.js
+├── sampleData/ # JSON/data generators for seeding
+│ └── index.js
+├── exportedData/ # Where exported JSON files are saved
+└── .env # Your MongoDB URI (not committed)
+
+---
+
+## ⚙️ Setup
+
+### 1. Clone the repo
 
 ```bash
-node shipping-db-tool.js list
-node shipping-db-tool.js view customers
-node shipping-db-tool.js seed users
-node shipping-db-tool.js clear users
-node shipping-db-tool.js stats customers
-<<<<<<< HEAD
-```
-=======
+git clone https://github.com/omaraldawud/shipping-db-tool.git
+cd shipping-db-tool
 
->>>>>>> 3b6f1997d40e3045e7dc56eaf02e44eb3e278473
+npm install
+
+Configure MongoDB connection
+    Create a .env file in the project root:
+    MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/test
+
+🚀 Usage
+You can run the CLI using:
+    🧠 Developer Notes
+All command logic lives in /commands/ for clean separation of concerns.
+
+MongoDB connection is abstracted in /db/connect-to-mongodb.js.
+
+Seed logic and sample data are modular via /sampleData/index.js.
+
+🤝 Contributing
+We welcome PRs! To contribute:
+
+Fork the repo
+
+Create a feature branch: git checkout -b feature/my-command
+
+Follow the existing command structure (e.g., commands/myFeature.js)
+
+Write clean code and submit a PR with clear description
+
+📝 License
+MIT — feel free to use and adapt.
+
+📬 Contact
+Created by omaraldawud.
+For issues, suggestions, or PRs — open a ticket or pull request.
+```
