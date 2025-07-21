@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+# mongo-db-tools
+🧰 A simple, extensible Node.js CLI tool for MongoDB database management. Perform operations like listing collections, viewing documents, seeding test data, clearing collections, and viewing collection stats — all from the command line.
+
+
+>>>>>>> 3b6f1997d40e3045e7dc56eaf02e44eb3e278473
 # 🧰 Mongo CLI Tool
 
 A simple Node.js CLI tool to manage MongoDB collections with commands like:
@@ -17,4 +24,8 @@ node shipping-db-tool.js view customers
 node shipping-db-tool.js seed users
 node shipping-db-tool.js clear users
 node shipping-db-tool.js stats customers
+<<<<<<< HEAD
 ```
+=======
+
+>>>>>>> 3b6f1997d40e3045e7dc56eaf02e44eb3e278473
