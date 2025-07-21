@@ -1,0 +1,16 @@
+{
+  "name": "mongo-cli-tool",
+  "version": "1.0.0",
+  "description": "A CLI tool for MongoDB written in Node.js to manage and interact with any collection in your database.",
+  "main": "shipping-db-tool.js",
+  "scripts": {
+    "start": "node shipping-db-tool.js"
+  },
+  "keywords": ["mongodb", "cli", "nodejs", "tooling", "utility"],
+  "author": "Omar Aldawud, PhD.",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "mongodb": "^5.8.0"
+  }
+}
