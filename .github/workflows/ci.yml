@@ -27,6 +27,8 @@ jobs:
           echo "MONGO_URI=${{ secrets.MONGO_URI }}" > .env
 
       - name: 🧪 Run tests
+        env:
+          MONGO_URI: ${{ secrets.MONGO_URI }}
         run: npx vitest --run
 
   release:
