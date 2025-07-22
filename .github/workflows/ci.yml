@@ -32,6 +32,7 @@ jobs:
         run: npx vitest --run
 
   release:
+    name: 🚀 Release
     needs: build-and-test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
@@ -56,4 +57,5 @@ jobs:
       - name: 🚀 Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: npx semantic-release
