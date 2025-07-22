@@ -41,21 +41,25 @@ A modular, developer-friendly CLI utility for MongoDB — built to help you insp
 
 ## 🧱 Project Structure
 
+<pre>
+<code>
 mongo-cli-tool/
-├── cli/ # Entry point CLI definition
-│ └── commander.js
-├── commands/ # Separated commands by concern (clean SoC)
-│ ├── collections.js
-│ ├── documents.js
-│ ├── exportImport.js
-│ ├── seed.js
-│ └── index.js
+├── cli/               # Entry point CLI definition
+│   └── commander.js
+├── commands/          # Separated commands by concern (clean SoC)
+│   ├── collections.js
+│   ├── documents.js
+│   ├── exportImport.js
+│   ├── seed.js
+│   └── index.js
 ├── db/
-│ └── connect-to-mongodb.js
-├── sampleData/ # JSON/data generators for seeding
-│ └── index.js
-├── exportedData/ # Where exported JSON files are saved
-└── .env # Your MongoDB URI (not committed)
+│   └── connect-to-mongodb.js
+├── sampleData/        # JSON/data generators for seeding
+│   └── index.js
+├── exportedData/      # Where exported JSON files are saved
+└── .env               # Your MongoDB URI (not committed)
+</code>
+</pre>
 
 ---
 
