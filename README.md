@@ -67,7 +67,7 @@ mongo-cli-tool/
 
 ### 1. Clone the repo
 
-```bash
+````bash
 git clone https://github.com/omaraldawud/shipping-db-tool.git
 cd shipping-db-tool
 
@@ -101,6 +101,23 @@ Make sure your MongoDB instance is running and accessible via .env configuration
 
 You can add more tests for other commands following this pattern.
 
+## 🐶 Git Hooks with Husky
+
+This project uses [Husky](https://typicode.github.io/husky/) to run tests automatically before each commit to ensure code quality.
+
+### Setup
+
+After cloning the repo, run:
+
+```bash
+npm install
+npx husky install
+
+How it works
+  Before each commit, npm test runs automatically.
+  If tests fail, the commit is aborted.
+  This helps catch issues early and keeps the codebase stable.
+
 
 🤝 Contributing
 We welcome PRs! To contribute:
@@ -120,4 +137,4 @@ MIT — feel free to use and adapt.
 Created by omaraldawud.
 For issues, suggestions, or PRs — open a ticket or pull request.
 
-```
+````
