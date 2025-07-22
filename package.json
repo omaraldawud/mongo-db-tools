@@ -8,7 +8,8 @@
   "type": "module",
   "scripts": {
     "start": "node shipping-db-tool.js",
-    "test": "jest tests"
+    "prepare": "sh ./setup-husky.sh",
+    "test": "vitest --run"
   },
   "keywords": [
     "mongodb",
@@ -23,10 +24,12 @@
     "mongodb": "^5.8.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "^12.0.2",
-    "jest": "^30.0.4",
+    "husky": "^9.1.7",
     "semantic-release": "^24.2.7",
     "vitest": "^3.2.4"
   }
