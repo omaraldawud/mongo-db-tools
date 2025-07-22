@@ -119,7 +119,7 @@ How it works
   This helps catch issues early and keeps the codebase stable.
 
 
-🤝 Contributing
+###🤝 Contributing
 We welcome PRs! To contribute:
 
 Fork the repo
@@ -130,10 +130,10 @@ Follow the existing command structure (e.g., commands/myFeature.js)
 
 Write clean code and submit a PR with clear description
 
-📝 License
+## 📝 License
 MIT — feel free to use and adapt.
 
-📬 Contact
+## 📬 Contact
 Created by omaraldawud.
 For issues, suggestions, or PRs — open a ticket or pull request.
 
