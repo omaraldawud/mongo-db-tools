@@ -22,5 +22,5 @@ jobs:
       - name: 📦 Install dependencies
         run: npm ci
 
-      - name: 🧪 Run CLI with --help
-        run: node shipping-db-tool.js --help
+      - name: 🧪 Run tests
+        run: npx vitest --run
