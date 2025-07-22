@@ -86,6 +86,22 @@ MongoDB connection is abstracted in /db/connect-to-mongodb.js.
 
 Seed logic and sample data are modular via /sampleData/index.js.
 
+## 🧪 Testing
+To run the test suite, use:
+    npm test
+or if you don’t have a test script, directly run:
+    npx vitest
+
+Example Test File: tests/cliCommands.test.js
+
+Notes
+The tests run the CLI commands as child processes and validate their outputs.
+
+Make sure your MongoDB instance is running and accessible via .env configuration before running tests.
+
+You can add more tests for other commands following this pattern.
+
+
 🤝 Contributing
 We welcome PRs! To contribute:
 

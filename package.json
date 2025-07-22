@@ -7,7 +7,8 @@
   "main": "shipping-db-tool.js",
   "type": "module",
   "scripts": {
-    "start": "node shipping-db-tool.js"
+    "start": "node shipping-db-tool.js",
+    "test": "jest tests"
   },
   "keywords": [
     "mongodb",
@@ -20,5 +21,9 @@
     "commander": "^14.0.0",
     "dotenv": "^17.2.0",
     "mongodb": "^5.8.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.4",
+    "vitest": "^3.2.4"
   }
 }
