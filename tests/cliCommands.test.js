@@ -1,3 +1,4 @@
+import "dotenv/config"; // this loads .env before anything else
 import { exec } from "child_process";
 import { describe, it, expect } from "vitest";
 import path from "path";

@@ -5,6 +5,13 @@
 #                   DO NOT PUSH
 # ========================
 
+# 0. To Clean Tags for semantic-release
+#   01. See you local Tags: git tag
+#   0.2 Fetch all remote tags explicitly: git fetch --tags --prune
+#   0.3 Check if the tag exists on the remote:  git ls-remote --tags origin
+#   0.4 
+#   0.5
+#   0.6
 # 1. [PREP] Fetch latest changes and tags
 echo "Fetching latest from remote..."
 git fetch origin
