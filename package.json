@@ -8,8 +8,7 @@
   "type": "module",
   "scripts": {
     "start": "node shipping-db-tool.js",
-    "prepare": "sh ./setup-husky.sh",
-    "test": "vitest --run"
+    "prepare": "sh ./setup-husky.sh"
   },
   "keywords": [
     "mongodb",
@@ -30,7 +29,6 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "^12.0.2",
     "husky": "^9.1.7",
-    "semantic-release": "^24.2.7",
-    "vitest": "^3.2.4"
+    "semantic-release": "^24.2.7"
   }
 }

@@ -1,6 +1,9 @@
 # === Node.js dependencies ===
 node_modules/
 
+# === My Files ===
+000-backups/
+
 # === Logs ===
 npm-debug.log*
 yarn-debug.log*
