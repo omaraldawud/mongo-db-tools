@@ -17,7 +17,7 @@ export default function Dashboard({ activeTab, setActiveTab }) {
             className={`tab-btn ${activeTab === tab.id ? 'active' : ''}`}
             onClick={() => setActiveTab(tab.id)}
           >
-            {tab.label}
+            { tab.label }
           </button>
         ))}
       </div>
