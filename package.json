@@ -7,6 +7,7 @@
   "main": "shipping-db-tool.js",
   "type": "module",
   "scripts": {
+  "test": "echo \"No tests yet\" && exit 0",
     "start": "node shipping-db-tool.js",
     "prepare": "sh ./setup-husky.sh"
   },
